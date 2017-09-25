@@ -30,10 +30,12 @@ x = 50:1:85;
 y = 0.9*x+109; %line equation y = 0.9x + 109
 plot(x,y)
 
+%{
 disp("Men");
 disp(r);
 disp("Women");
 disp(r2);
+%}
 
 %{
 S = std(r)
