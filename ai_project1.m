@@ -104,7 +104,7 @@ for a = 1:2000
     end
 end
 error = error / 4000;
-disp("Scenario A")
+disp("Scenario B")
 disp("Error Rate:")
 disp(error)
 disp("Accuracy Rate:")
