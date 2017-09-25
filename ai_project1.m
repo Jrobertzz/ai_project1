@@ -13,8 +13,7 @@ sigma = corr2cov(ExpSigma, ExpCorrC);                %covariance matrix(https://
 [standard_div] = cov2corr(sigma);
 r2 = mvnrnd(mu,sigma,2000);
 
-figure
-disp("Height");                                     %create new figure(graph window)
+figure                                                    %create new figure(graph window)
 h1 = histfit(r(:,1));                               %histfit creates histogram with bell curve
 set(h1(1),'facecolor','r'); set(h1(2),'color','m')  %<histfit>(1) = bar color, <histfit>(2) = line color
 hold on;                                            %keep in figure
@@ -23,7 +22,6 @@ alpha(h2,.5)
 line([67 67], ylim); %line equation x >= 67
 
 figure
-disp("Height v Weight");
 plot(r2(:,1),r2(:,2),'+',r(:,1),r(:,2),'X')
 hold on;
 x = 50:1:85;
