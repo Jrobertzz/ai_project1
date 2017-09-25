@@ -1,0 +1,37 @@
+Scenario A
+Error Rate:
+    0.2597
+
+Accuracy Rate:
+    0.7403
+
+True Positive Rate
+    0.7720
+
+True Negative Rate
+    0.7085
+
+False Positive Rate
+    0.2915
+
+False Negative Rate
+    0.2280
+
+Scenario B
+Error Rate:
+    0.0520
+
+Accuracy Rate:
+    0.9480
+
+True Positive Rate
+    0.9030
+
+True Negative Rate
+    0.9930
+
+False Positive Rate
+    0.0070
+
+False Negative Rate
+    0.0970
