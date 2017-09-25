@@ -1,14 +1,14 @@
 mu = [70,180];                                      %mean for height/weight in inches/pounds - men
 ExpSigma = [4  6];
-ExpCorrC = [1.0 -0.5
-           -0.5  1.0];
+ExpCorrC = [1.0 0.8
+           0.8  1.0];
 sigma = corr2cov(ExpSigma, ExpCorrC);                %covariance matrix(https://en.wikipedia.org/wiki/Covariance_matrix)
 r = mvnrnd(mu,sigma,2000);
 
 mu = [65,160];                                      %mean for height/weight in inches/pounds - women
 ExpSigma = [3.5  5];
-ExpCorrC = [1.0 -0.5
-           -0.5  1.0];
+ExpCorrC = [1.0 0.8
+           0.8  1.0];
 sigma = corr2cov(ExpSigma, ExpCorrC);                %covariance matrix(https://en.wikipedia.org/wiki/Covariance_matrix)
 [standard_div] = cov2corr(sigma);
 r2 = mvnrnd(mu,sigma,2000);
