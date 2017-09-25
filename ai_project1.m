@@ -27,7 +27,7 @@ disp("Height v Weight");
 plot(r2(:,1),r2(:,2),'+',r(:,1),r(:,2),'X')
 hold on;
 x = 50:1:85;
-y = -1.3*x+257; %line equation y = -1.3x + 257
+y = 0.9*x+109; %line equation y = 0.9x + 109
 plot(x,y)
 
 disp("Men");
@@ -86,7 +86,7 @@ fp = 0;
 fn = 0;
 for a = 1:2000
     x = r(a,1);
-    yhat = -1.3*x+257;
+    yhat = 0.9*x+109;
     if r(a,2) < yhat
         error = error + 1;          %error if below line for men
         fn = fn + 1;
